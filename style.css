@@ -1,0 +1,63 @@
+body {
+    font-family: Calibri;
+}
+
+h1.logo {
+  display: flex;
+  height: 30%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: d7d7e5;
+  border-color: 939393;
+  font-size: 56;
+  font-weight: bold;
+  margin: 0;
+  padding: none;
+}
+
+ul.menu {
+display: flex;
+align-items: center;
+justify-content: space-around;
+font-weight: bold;
+list-style:none;
+margin-left:0;
+padding-left:0;
+font-size: 24;
+background-color: 939393;
+margin: 0;
+padding: none;
+height: 7%;
+}
+
+div.musique {
+display: flex;
+align-items: flex-start;
+  background-color: d7d7e5;
+  border-style: solid;
+  border-color: 939393;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  padding: 2%;
+  border-radius: 10px;
+  width: 70%;
+}
+
+img.covers {
+  width: 20%;
+  border-radius: 20px;
+}
+
+h2.colonne {
+  margin-top: 3%;
+font-size: 18;
+font-weight: bold;
+margin-left: 2%;
+}
+
+p.infos_musique {
+  display: flex;
+  flex-direction: column;
+  padding-left: 4%;
+}
