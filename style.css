@@ -13,10 +13,10 @@ h1.logo {
   font-size: 56;
   font-weight: bold;
   margin: 0;
-  padding: none;
+  padding: 0;
 }
 
-ul.menu {
+div.menu {
 display: flex;
 align-items: center;
 justify-content: space-around;
@@ -25,9 +25,8 @@ list-style:none;
 margin-left:0;
 padding-left:0;
 font-size: 24;
-background-color: 939393;
 margin: 0;
-padding: none;
+padding: 0;
 height: 7%;
 }
 
@@ -42,10 +41,11 @@ align-items: flex-start;
   padding: 2%;
   border-radius: 10px;
   width: 70%;
+  font
 }
 
 img.covers {
-  width: 20%;
+  width: 10%;
   border-radius: 20px;
 }
 
@@ -60,4 +60,48 @@ p.infos_musique {
   display: flex;
   flex-direction: column;
   padding-left: 4%;
+}
+
+#menu1 {
+display: flex;
+justify-content: center;
+  background-color: 939393;
+  width: 25%;
+  margin: 0;
+  padding: 0;
+  height: 150%;
+  align-items: center;
+}
+
+#menu2 {
+  display: flex;
+  justify-content: center;
+  background-color: 939393;
+  width: 25%;
+  margin: 0;
+  padding: 0;
+  height: 150%;
+  align-items: center;
+}
+
+#menu3 {
+  display: flex;
+  justify-content: center;
+  background-color: 939393;
+  width: 25%;
+  margin: 0;
+  padding: 0;
+  height: 150%;
+  align-items: center;
+}
+
+#menu4 {
+  display: flex;
+  justify-content: center;
+  background-color: 939393;
+  width: 25%;
+  margin: 0;
+  padding: 0;
+  height: 150%;
+  align-items: center;
 }
