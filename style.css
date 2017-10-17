@@ -1,5 +1,9 @@
 body {
-    font-family: Calibri;
+color:black;
+font-family: Calibri;
+background-color:white;
+background-image:linear-gradient(black, grey);
+background-position: center;
 }
 
 h1.logo {
@@ -32,16 +36,14 @@ height: 7%;
 
 div.musique {
 display: flex;
-align-items: flex-start;
+align-items: center;
   background-color: d7d7e5;
   border-style: solid;
   border-color: 939393;
   margin-bottom: 2%;
   margin-left: 2%;
-  padding: 2%;
   border-radius: 10px;
   width: 70%;
-  font
 }
 
 img.covers {
@@ -56,13 +58,13 @@ font-weight: bold;
 margin-left: 2%;
 }
 
-p.infos_musique {
+div.infos_musique {
   display: flex;
   flex-direction: column;
-  padding-left: 4%;
+  margin-left: 4%;
 }
 
-#menu1 {
+.menu1 {
 display: flex;
 justify-content: center;
   background-color: 939393;
@@ -73,35 +75,51 @@ justify-content: center;
   align-items: center;
 }
 
-#menu2 {
-  display: flex;
-  justify-content: center;
-  background-color: 939393;
-  width: 25%;
-  margin: 0;
-  padding: 0;
-  height: 150%;
-  align-items: center;
+div.page {
+  width: 85%;
+  margin:auto;
+  border-style: solid;
+  border-color: 939393;
+  border-top-style: none;
+  border-bottom-style: none;
+  background-color: e5e5e5;
 }
 
-#menu3 {
-  display: flex;
-  justify-content: center;
-  background-color: 939393;
-  width: 25%;
-  margin: 0;
-  padding: 0;
-  height: 150%;
-  align-items: center;
+h3.titre_chanson {
+  font-size: 20;
+  font-style: bold;
 }
 
-#menu4 {
+h3.artiste {
+    font-size: 15;
+  }
+
+h3.titre_album {
+  font-size : 13;
+  font-style: oblique;
+}
+
+div.musique_liste{
+display: flex;
+align-items: center;
+}
+
+div.musique_liste {
+display: flex;
+align-items: center;
+margin-bottom: 2%;
+}
+
+div.player {
+  margin: 0 auto;
+position: relative;
+top: 34;
+right: 50;
+}
+
+div.Classement{
+  font-size: 25;
+  font-style: bold;
   display: flex;
-  justify-content: center;
-  background-color: 939393;
-  width: 25%;
-  margin: 0;
-  padding: 0;
-  height: 150%;
-  align-items: center;
+  justify-content: flex-end;
 }
