@@ -34,19 +34,17 @@ padding: 0;
 height: 7%;
 }
 
-div.musique {
-display: flex;
-align-items: center;
+#listemusique {
   background-color: d7d7e5;
   border-style: solid;
   border-color: 939393;
-  margin-bottom: 2%;
-  margin-left: 2%;
+  margin: 2%;
   border-radius: 10px;
-  width: 70%;
+  list-style:none;
+  padding: 2%;
 }
 
-img.covers {
+#covers {
   width: 10%;
   border-radius: 20px;
 }
@@ -85,16 +83,16 @@ div.page {
   background-color: e5e5e5;
 }
 
-h3.titre_chanson {
+#titre {
   font-size: 20;
   font-style: bold;
 }
 
-h3.artiste {
+#artiste {
     font-size: 15;
   }
 
-h3.titre_album {
+#album {
   font-size : 13;
   font-style: oblique;
 }
@@ -110,16 +108,17 @@ align-items: center;
 margin-bottom: 2%;
 }
 
-div.player {
-  margin: 0 auto;
-position: relative;
-top: 34;
-right: 50;
+iframe.player {
+display: flex;
+justify-content: flex-start;
+align-items: flex-end;
+height: 11%;
 }
 
-div.Classement{
+#numero{
   font-size: 25;
   font-style: bold;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  align-items: center;
 }
