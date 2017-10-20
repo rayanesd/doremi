@@ -8,7 +8,7 @@ $(document).ready(function(){
     $(this).fadeTo("fast", 100);
   }); //Retour à la normale des éléments du menu quand la souris ne les touche plus
 
-  $.getJSON("https://api.airtable.com/v0/app4Ra4aWUQB0rfm0/musics?api_key=keyfJkwTBluhMABPw",
+  $.getJSON("https://api.airtable.com/v0/app4Ra4aWUQB0rfm0/musics?pageSize=10&view=Grid%20view&api_key=keyfJkwTBluhMABPw",
   	function(data) { //Ajout de la base de données
       console.log(data);
       $.each(data.records, function(key,val) {
@@ -30,6 +30,7 @@ $(document).ready(function(){
           ";
 
           $("#listemusique").append(code);
+
       });
 
       $('.like').each(function(){
@@ -70,5 +71,12 @@ $(document).ready(function(){
 
   	});
 
+    $(".nextpage").mouseenter(function(){
+      $(this).fadeTo("fast", 0.30);
+    });
+
+    $(".nextpage").mouseleave(function(){
+      $(this).fadeTo("fast", 100);
+    });
 
 });

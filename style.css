@@ -44,6 +44,7 @@ div.menu {
   align-items: flex-start;
   width: 100px;
   border-radius: 20px;
+  margin-left: 20px;
 }
 
 h2.colonne {
@@ -102,7 +103,11 @@ iframe.player {
 
 #numero {
   font-size: 25;
-  font-style: bold;
+  font-weight: bold;
+  width: 15px;
+  background-image: url(étoiles.png);
+  background-size: 15px;
+  text-align: center;
 }
 
 #footer {
@@ -116,16 +121,19 @@ iframe.player {
 
 #infos {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-flow: row;
   border: 1px solid black;
-  padding: 3%;
+  padding: 2%;
   margin: 3%;
   background-color: d7d7e5;
   border-style: solid;
   border-color: 939393;
   border-radius: 10px;
+}
+
+#infos:hover, #numero:hover {
+  background-color: efefef;
 }
 
 #infos li {
@@ -145,6 +153,8 @@ iframe.player {
 #infozik {
   display: flex;
   flex-flow: column;
+  margin-left: -20px ;
+  width: 400px;
 }
 
 #vote {
@@ -165,4 +175,27 @@ margin: 10px;
 #partage_like{
   display: flex;
   flex-flow: column;
+  margin-left: 40px;
+}
+
+#nb_votes {
+  width:30px;
+}
+
+.listepage {
+  font-weight: bold;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.nextpage {
+  width:150px;
+  background-color:d7d7e5;
+  border-style: solid;
+  border-color: 939393;
+  text-align: center;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 5px;
 }
