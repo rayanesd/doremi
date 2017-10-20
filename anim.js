@@ -23,6 +23,9 @@ $(document).ready(function(){
             <ul id='vote'><li><img id='like' src='like.png'></li>\
             <li><img id='dislike' src='unlike.png'></li>\
             </ul>\
+          <li id='nb_votes'>"+val.fields.likes+"</li>\
+          <ul id='partage_like'><li><a href='https://twitter.com/share'><img id='twitter' src='https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/1200px-Twitter_Bird.png'></a></li>\
+              <li> <img id='coeur' src='http://www2.mes-coloriages-preferes.biz/colorino/Images/Large/Chiffres-et-formes-Coeur-248066.png'</li>\
           </ul>\
           ";
 
@@ -42,6 +45,22 @@ $(document).ready(function(){
       });
 
       $("#dislike").mouseleave(function(){
+        $(this).fadeTo("fast", 100);
+      });
+
+      $("#twitter").mouseenter(function(){
+        $(this).fadeTo("fast", 0.30);
+      });
+
+      $("#twitter").mouseleave(function(){
+        $(this).fadeTo("fast", 100);
+      });
+
+      $("#coeur").mouseenter(function(){
+        $(this).fadeTo("fast", 0.30);
+      });
+
+      $("#coeur").mouseleave(function(){
         $(this).fadeTo("fast", 100);
       });
 

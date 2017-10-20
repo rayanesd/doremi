@@ -2,7 +2,7 @@ body {
   color:black;
   font-family: Calibri;
   background-color:white;
-  background-image:linear-gradient(black, grey);
+  background-image:url(https://st2.depositphotos.com/1856827/5717/v/950/depositphotos_57172785-stock-illustration-abstract-gray-triangles-background.jpg);
   background-position: center;
 }
 
@@ -35,24 +35,19 @@ div.menu {
 }
 
 #listemusique {
-  background-color: d7d7e5;
-  border-style: solid;
-  border-color: 939393;
   margin: 2%;
-  border-radius: 10px;
   list-style:none;
-  padding: 2%;
 }
 
 #covers {
   display: flex;
   align-items: flex-start;
-  width: 80px;
+  width: 100px;
   border-radius: 20px;
 }
 
 h2.colonne {
-  margin-top: 1%;
+  margin-top: 3%;
   font-size: 18;
   font-weight: bold;
   margin-left: 2%;
@@ -67,7 +62,11 @@ h2.colonne {
   padding: 0;
   height: 100%;
   align-items: center;
-  border-bottom-style: solid;
+  border: solid;
+  border-bottom: 0;
+  border-top: 0;
+  border-color: #2F4F4F;
+  border-width: thin;
 }
 
 div.page {
@@ -104,8 +103,6 @@ iframe.player {
 #numero {
   font-size: 25;
   font-style: bold;
-  display: flex;
-  align-items: center;
 }
 
 #footer {
@@ -123,6 +120,12 @@ iframe.player {
   align-items: center;
   flex-flow: row;
   border: 1px solid black;
+  padding: 3%;
+  margin: 3%;
+  background-color: d7d7e5;
+  border-style: solid;
+  border-color: 939393;
+  border-radius: 10px;
 }
 
 #infos li {
@@ -145,6 +148,21 @@ iframe.player {
 }
 
 #vote {
+  display: flex;
+  flex-flow: column;
+}
+
+#twitter {
+width: 20px;
+margin: 10px;
+}
+
+#coeur {
+  width: 20px;
+  margin: 10px;
+}
+
+#partage_like{
   display: flex;
   flex-flow: column;
 }
