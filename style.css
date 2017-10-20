@@ -132,12 +132,12 @@ iframe.player {
   display: inline;
 }
 
-#like {
+.like {
   width: 30px;
   margin: 10px;
 }
 
-#dislike {
+.dislike {
   width: 30px;
   margin: 10px;
 }
@@ -152,12 +152,12 @@ iframe.player {
   flex-flow: column;
 }
 
-#twitter {
+.twitter {
 width: 20px;
 margin: 10px;
 }
 
-#coeur {
+.coeur {
   width: 20px;
   margin: 10px;
 }

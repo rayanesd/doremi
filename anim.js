@@ -20,48 +20,52 @@ $(document).ready(function(){
             <li id='album'>"+val.fields.album+"</li>\
             </ul>\
           <li><iframe class='player' src='https://open.spotify.com/embed?uri="+val.fields['spotify-link']+"&view=coverart' frameborder='0' allowtransparency='true'></iframe></li>\
-            <ul id='vote'><li><img id='like' src='like.png'></li>\
-            <li><img id='dislike' src='unlike.png'></li>\
+            <ul id='vote'><li><img class='like' src='like.png'></li>\
+            <li><img class='dislike' src='unlike.png'></li>\
             </ul>\
           <li id='nb_votes'>"+val.fields.likes+"</li>\
-          <ul id='partage_like'><li><a href='https://twitter.com/share'><img id='twitter' src='https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/1200px-Twitter_Bird.png'></a></li>\
-              <li> <img id='coeur' src='http://www2.mes-coloriages-preferes.biz/colorino/Images/Large/Chiffres-et-formes-Coeur-248066.png'</li>\
+          <ul id='partage_like'><li><a href='https://twitter.com/share'><img class='twitter' src='https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/1200px-Twitter_Bird.png'></a></li>\
+              <li> <img class='coeur' src='http://www2.mes-coloriages-preferes.biz/colorino/Images/Large/Chiffres-et-formes-Coeur-248066.png'</li>\
           </ul>\
           ";
 
           $("#listemusique").append(code);
       });
 
-      $("#like").mouseenter(function(){
-        $(this).fadeTo("fast", 0.30);
+      $('.like').each(function(){
+        $(this).mouseenter(function(){
+          $(this).fadeTo("fast", 0.30);
+        });
+        $(this).mouseleave(function(){
+          $(this).fadeTo("fast", 100);
+        });
       });
 
-      $("#like").mouseleave(function(){
-        $(this).fadeTo("fast", 100);
+      $('.dislike').each(function(){
+        $(this).mouseenter(function(){
+          $(this).fadeTo("fast", 0.30);
+        });
+        $(this).mouseleave(function(){
+          $(this).fadeTo("fast", 100);
+        });
       });
 
-      $("#dislike").mouseenter(function(){
-        $(this).fadeTo("fast", 0.30);
+      $('.twitter').each(function(){
+        $(this).mouseenter(function(){
+          $(this).fadeTo("fast", 0.30);
+        });
+        $(this).mouseleave(function(){
+          $(this).fadeTo("fast", 100);
+        });
       });
 
-      $("#dislike").mouseleave(function(){
-        $(this).fadeTo("fast", 100);
-      });
-
-      $("#twitter").mouseenter(function(){
-        $(this).fadeTo("fast", 0.30);
-      });
-
-      $("#twitter").mouseleave(function(){
-        $(this).fadeTo("fast", 100);
-      });
-
-      $("#coeur").mouseenter(function(){
-        $(this).fadeTo("fast", 0.30);
-      });
-
-      $("#coeur").mouseleave(function(){
-        $(this).fadeTo("fast", 100);
+      $('.coeur').each(function(){
+        $(this).mouseenter(function(){
+          $(this).fadeTo("fast", 0.30);
+        });
+        $(this).mouseleave(function(){
+          $(this).fadeTo("fast", 100);
+        });
       });
 
   	});
